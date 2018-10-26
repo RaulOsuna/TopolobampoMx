@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AcercadelpuertoUbicacionPage } from '../acercadelpuerto-ubicacion/acercadelpuerto-ubicacion';
+import { AcercadelpuertoZonainfluenciaPage } from '../acercadelpuerto-zonainfluencia/acercadelpuerto-zonainfluencia';
+import { AcercadelpuertoConectividadPage } from '../acercadelpuerto-conectividad/acercadelpuerto-conectividad';
 
 /**
  * Generated class for the AcercadelpuertoPage page.
@@ -21,5 +24,13 @@ export class AcercadelpuertoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AcercadelpuertoPage');
   }
-
+  goUbicacion():void{
+    this.navCtrl.push(AcercadelpuertoUbicacionPage);
+  }
+  goZonaInfluencia():void{
+    this.navCtrl.push(AcercadelpuertoZonainfluenciaPage);
+  }
+  goConectividad():void{
+    this.navCtrl.push(AcercadelpuertoConectividadPage);
+  }
 }
