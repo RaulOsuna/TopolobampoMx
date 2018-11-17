@@ -15,7 +15,7 @@ position: absolute;
 z-index: -1;	  
 }
 input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-label {
-color: rgb(173, 0, 0);
+color: rgb(73, 73, 73);
 border-left: #ddd solid 1px;
 border-right: #ddd solid 1px;
 font-weight: 500;
@@ -45,7 +45,7 @@ left: 0;
 .tab-label {
 cursor: pointer;
 color: #111;
-background-color: #fff;
+background-color: rgb(255, 255, 255);
 box-sizing: border-box;
 display: inline-flex;
 align-items: center;
@@ -60,7 +60,7 @@ width: 100%;
 
 
 .slide {
-background: rgb(173, 0, 0);
+background: rgb(102, 102, 102);
 width: calc(100% / 4);
 height: 4px;
 position: absolute;

@@ -6,6 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
+import { Geolocation } from '@ionic-native/geolocation';
+
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -16,6 +18,10 @@ import{ServiciosPage} from '../pages/servicios/servicios';
 import{AcercadelpuertoUbicacionPage} from '../pages/acercadelpuerto-ubicacion/acercadelpuerto-ubicacion';
 import{AcercadelpuertoZonainfluenciaPage} from '../pages/acercadelpuerto-zonainfluencia/acercadelpuerto-zonainfluencia';
 import{AcercadelpuertoConectividadPage} from '../pages/acercadelpuerto-conectividad/acercadelpuerto-conectividad';
+import{AcercadelpuertoHinterlandPage} from '../pages/acercadelpuerto-hinterland/acercadelpuerto-hinterland';
+import{AcercadelpuertoInfraestructuraPage} from '../pages/acercadelpuerto-infraestructura/acercadelpuerto-infraestructura';
+import{AcercadelpuertoDistanciasPage} from '../pages/acercadelpuerto-distancias/acercadelpuerto-distancias';
+import{AcercadelpuertoActividadesportuariasPage} from '../pages/acercadelpuerto-actividadesportuarias/acercadelpuerto-actividadesportuarias';
 
 @NgModule({
   declarations: [
@@ -28,6 +34,10 @@ import{AcercadelpuertoConectividadPage} from '../pages/acercadelpuerto-conectivi
     AcercadelpuertoUbicacionPage,
     AcercadelpuertoZonainfluenciaPage,
     AcercadelpuertoConectividadPage,
+    AcercadelpuertoHinterlandPage,
+    AcercadelpuertoInfraestructuraPage,
+    AcercadelpuertoDistanciasPage,
+    AcercadelpuertoActividadesportuariasPage
   ],
   imports: [
     BrowserModule,
@@ -49,11 +59,16 @@ import{AcercadelpuertoConectividadPage} from '../pages/acercadelpuerto-conectivi
     AcercadelpuertoUbicacionPage,
     AcercadelpuertoZonainfluenciaPage,
     AcercadelpuertoConectividadPage,
+    AcercadelpuertoHinterlandPage,
+    AcercadelpuertoInfraestructuraPage,
+    AcercadelpuertoDistanciasPage,
+    AcercadelpuertoActividadesportuariasPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-   
+    Geolocation,
+    
     
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
